@@ -1,9 +1,13 @@
-let date = new Date();
-let day = date.getDate(); 
-
-let christmasDay = 25;
-
-let remainingDays = christmasDay - day;
-
 let display = document.getElementById("countdown-display");
-display.textContent = remainingDays;
+
+function renderCountDown() {
+  let date = new Date().getDate();
+
+  let christmasDay = 25;
+
+  let remainingDays = christmasDay - date;
+
+  display.textContent = remainingDays;
+}
+
+renderCountDown();
